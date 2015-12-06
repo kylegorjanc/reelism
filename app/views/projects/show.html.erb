@@ -1,0 +1,11 @@
+<div class="page" id="project-view">
+	<h2 class="title"><%= @project.title %></h2>
+	<strong><p id="project-subheader"><%= @project.media_type %> · <%= @project.role %></p></strong>
+	<div id="video">
+		<iframe width="640" height="430" src="https://www.youtube.com/embed/<%= @project.youtube_id %>" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div id="description">
+		<p><%= @project.description %></p>
+		<p id="link-back"><%= link_to "Back to Reel", projects_path %></p>
+	</div>
+</div>

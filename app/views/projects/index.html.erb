@@ -1,0 +1,11 @@
+<h2>My Projects</h2>
+
+<ul id="projects">
+	<% @projects.each do |project| %>
+	<li>
+		<strong><%= link_to project.title, project_path(project), class: 'project_title' %></strong>  <em><%= project.media_type %></em>
+	</li>
+	<% end %>
+</ul>
+
+<%= link_to "Add Project", new_project_path, class: 'new_project' %>

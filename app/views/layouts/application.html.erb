@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="wrap">
+		<header>
+			<h1 id="header-text">Name Creditson's Reel</h1>
+		</header>
+		<div class="main">
+	<%= yield %>
+		</div>	
+		<footer>
+			<input placeholder="Search Reels..."></input>
+			<button>Search</button>
+			<button>Create New Reel</button>
+			<button>Login</button>
+<!-- 			<button></button> -->
+		</footer>
+	</div>
 </body>
 </html>

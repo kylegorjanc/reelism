@@ -13,3 +13,78 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+/*	border: 1px solid black;*/
+	box-sizing: border-box;
+	margin: 0;
+}
+
+
+body {
+	background-color: #FFFFFF;
+	width: 100%;
+	color: #111111;
+	font-family: caslon;
+	font-size: 16pt;
+}
+
+p, ul, li {
+	line-height: 30pt;
+}
+
+.wrap {
+	z-index: 1;
+}
+
+h1 {
+	font-size: 48pt;
+}
+
+h2 {
+	font-size: 24pt;
+	font-variant: small-caps;
+}
+
+div {
+	margin: 0 auto;
+}
+
+header {
+	position: relative;
+	background-image: url("http://theblogboutique.com/wp-content/uploads/2010/05/kodak-film-strip.jpg");
+	background-repeat: repeat-x;
+	text-align: center;
+	margin: 0px auto;
+	height: 100px;
+}
+
+#header-text {
+	padding-top: 30px;
+	color: #EEEEEE;
+	font-variant: small-caps;
+}
+
+.main {
+	margin: 20px auto 100px auto;
+	position: absolute;
+	width: 100%;
+}
+
+#link-back {
+	font-family: courier;
+	text-decoration: none;
+	line-height: 32pt;
+	margin-left: -16px;
+}
+
+footer {
+	font-family: courier;
+	position: fixed;
+	background-color: #FFFFFF;
+	width: 100%;
+	bottom: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
