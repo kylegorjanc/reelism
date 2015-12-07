@@ -25,7 +25,7 @@ body {
 	background-color: #FFFFFF;
 	width: 100%;
 	color: #111111;
-	font-family: caslon;
+	font-family: "Helvetica Neue";
 	font-size: 16pt;
 }
 
@@ -71,11 +71,27 @@ header {
 	width: 100%;
 }
 
-#link-back {
+.link {
 	font-family: courier;
 	text-decoration: none;
 	line-height: 32pt;
-	margin-left: -16px;
+	margin-left: -8px;
+}
+
+button, .button {
+	background-color: #FFFFFF;
+	color: #000000;
+	border: none;
+	font-family: courier;
+	font-size: 14pt;
+	padding: 8px 14px;
+	/*border-radius: 12px;*/
+	box-shadow: 0px 0px 0px 0px;
+	text-transform: lowercase;
+}
+
+.delete {
+	color: red;
 }
 
 footer {

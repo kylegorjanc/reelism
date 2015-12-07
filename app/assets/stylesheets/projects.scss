@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#project-index {
+	
+	position: relative;
+	padding-left: 80px;
+}
+
 #project-view {
 	text-align: center;
 	line-heigt: 2pt;
@@ -19,4 +25,26 @@
 #description {
 	margin: 16px 10%;
 	text-align: left;
+}
+
+
+.form-template {
+	text-align: center;
+	border: 1px solid black;
+	width: 50%
+}
+
+.form {
+	box-shadow: 1px;
+}
+
+.form-field {
+	font-size: 12pt;
+	line-height: 18pt !important;
+	margin: 0px auto;
+	width: 80%;
+}
+
+.text-area {
+	height: 50px;
 }

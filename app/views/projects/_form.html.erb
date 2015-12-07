@@ -1,0 +1,28 @@
+<div class="form">
+		<%= form_for(@project) do |f| %>
+			<ul>
+			<% @project.errors.full_messages.each do |error| %>
+				<li><%= error %></li>
+			<% end %>
+			</ul>
+		<span style="font-size: 8pt;">*please use only the ID number of your video, eg: https://www.youtube.com/watch?v=<span style="background-color: #FFFF00">QTXyXuqfBLA</span></span>
+		<p>
+			<%= f.text_field :youtube_id, :placeholder => "YouTube ID", :class =>"form-field"  %>
+		</p>
+		<p>
+			<%= f.text_field :title, :placeholder => "Project Title", :class =>"form-field"  %>
+		</p>
+		<p>
+			<%= f.text_field :media_type, :placeholder => "Media Type", :class =>"form-field"  %>
+		</p>
+		<p>
+			<%= f.text_field :role, :placeholder => "Role/Job Title", :class =>"form-field"  %>
+		</p>
+		<br>
+		<p>
+			<%= f.text_area :description, :placeholder => "Description of your contribution to the clip provided", :class =>"form-field text-area" %>
+		</p>
+		<p class="form-button"> <%= f.submit "SUBMIT", :class => "button" %> </p>
+		<% end %>
+
+	</div>
